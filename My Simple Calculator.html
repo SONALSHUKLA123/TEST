@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Simple Calculator</title>
+        
+    </head>
+    <body style="background-color:yellow;">
+        <form name="formcalc">
+        Number 1:<input type="text" name ="textnum1"><br/>
+        Number 2:<input type="text" name ="textnum2"><br/>
+        Result  :<input type="text" name ="txtres"><br/>
+        <input type="button" value="Addition +" onclick="sumValues()">
+        <input type="button" value="Substration -" onclick="SubValues()">
+        <input type="button" value="Multiplication *" onclick="MulValues()">
+        <input type="button" value="Division /" onclick="DiVValues()">
+        <input type="button" value="Modules %" onclick="ModValues()">
+        </form>
+        <script type="text/javascript">
+        function sumValues()
+        {
+            var num1, num2, res;
+            num1=Number(document.formcalc.textnum1.value);
+            num2=Number(document.formcalc.textnum2.value);
+            res=num1+num2;
+                   
+            document.formcalc.txtres.value=res;
+        }
+        function SubValues()
+        {
+            var num1, num2, res;
+            num1=Number(document.formcalc.textnum1.value);
+            num2=Number(document.formcalc.textnum2.value);
+            res=num1-num2;
+                   
+            document.formcalc.txtres.value=res;
+        }
+        function MulValues()
+        {
+            var num1, num2, res;
+            num1=Number(document.formcalc.textnum1.value);
+            num2=Number(document.formcalc.textnum2.value);
+            res=num1*num2;
+                   
+            document.formcalc.txtres.value=res;
+        }
+        function DiVValues()
+        {
+            var num1, num2, res;
+            num1=Number(document.formcalc.textnum1.value);
+            num2=Number(document.formcalc.textnum2.value);
+            res=num1/num2;
+                   
+            document.formcalc.txtres.value=res;
+        }
+        function ModValues()
+        {
+            var num1, num2, res;
+            num1=Number(document.formcalc.textnum1.value);
+            num2=Number(document.formcalc.textnum2.value);
+            res=num1%num2;
+                   
+            document.formcalc.txtres.value=res;
+        }
+    
+        </script>
+
+    </body>
+</html>
